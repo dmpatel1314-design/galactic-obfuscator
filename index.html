@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>galactic-obfuscator.github.io</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.5; padding: 32px; max-width: 900px; margin: auto; color: #0b1220; background: #f7fafc; }
+    header { margin-bottom: 1.5rem; }
+    pre { background:#0b1220; color:#e6edf3; padding:12px; overflow:auto; border-radius:6px }
+    a { color: #0366d6; text-decoration: none; }
+    .meta { color: #6b7280; font-size: .95rem; margin-bottom: 16px; }
+    .card { background: #fff; border: 1px solid #e6eef6; padding:18px; border-radius:8px; box-shadow: 0 1px 2px rgba(11,18,32,0.03); }
+    footer { margin-top:32px; color:#6b7280; font-size:.9rem }
+    .btn { display:inline-block; padding:8px 12px; border-radius:6px; background:#0366d6; color:white; text-decoration:none; margin-right:8px }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>galactic-obfuscator.github.io</h1>
+    <div class="meta">Project page for the obfuscator prototype</div>
+  </header>
+
+  <section class="card">
+    <h2>About</h2>
+    <p>This is a minimal prototype demonstrating:</p>
+    <ul>
+      <li>JavaScript obfuscation (AST-based) — identifier renaming + string literal encoding</li>
+      <li>Lua obfuscation (packer) — comment stripping + XOR + base64 loader</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:18px" class="card">
+    <h2>Quick start</h2>
+    <p>Clone, install and run the CLI:</p>
+    <pre><code>git clone git@github.com:dmpatel1314-design/galactic-obfuscator.git
+cd galactic-obfuscator
+npm install
+node ./src/cli.js example.js -o example.obf.js
+</code></pre>
+    <p>For Lua:</p>
+    <pre><code>node ./src/cli.js example.lua --lang lua -o example.obf.lua</code></pre>
+  </section>
+
+  <section style="margin-top:18px" class="card">
+    <h2>Files added</h2>
+    <ul>
+      <li><code>src/cli.js</code></li>
+      <li><code>src/jsObfuscator.js</code></li>
+      <li><code>src/luaObfuscator.js</code></li>
+      <li><code>README.md</code>, <code>package.json</code>, <code>LICENSE</code></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Repository: <a href="https://github.com/dmpatel1314-design/galactic-obfuscator">dmpatel1314-design/galactic-obfuscator</a></p>
+    <p>Pages URL (project page): <a href="https://dmpatel1314-design.github.io/galactic-obfuscator">https://dmpatel1314-design.github.io/galactic-obfuscator</a></p>
+    <p>Note: repo is private — Pages visibility depends on your account plan and Pages settings.</p>
+  </footer>
+</body>
+</html>
