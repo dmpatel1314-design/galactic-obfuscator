@@ -1,0 +1,21 @@
+{
+  "name": "code-obfuscator-prototype",
+  "version": "0.1.0",
+  "description": "Prototype obfuscator for JavaScript and Lua (AST-based JS renaming + string encoding; Lua base64+XOR packer)",
+  "bin": {
+    "obfuscator": "./src/cli.js"
+  },
+  "author": "generated",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "@babel/generator": "^7.24.0",
+    "commander": "^11.0.0",
+    "luaparse": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
